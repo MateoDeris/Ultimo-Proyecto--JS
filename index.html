@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Criptomonedas - Mateo Deris</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="./img/bitcoin.png">
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1 class="header-title">Cotización de Criptomonedas</h1>
+        <nav>
+            <a href="https://www.binance.com/es-AR/price/bitcoin" target="_blank">Clickea para ver precio del Bitcoin en Binance</a>
+        </nav>
+        <div class="stock-market">
+            <div class="ticker-line"></div>
+        </div>
+    </header>
+    <div class="container">
+        <form id="quoteForm">
+            <label for="amount">Cantidad en USD 💲:</label>
+            <input type="number" id="amount" required>
+            <button type="submit">Cotizar🚀</button>
+        </form>
+        <div id="results"></div>
+        <div id="alert" class="hidden">Tu cotización fue exitosa, tienes los resultados en pantalla.</div>
+        <div id="history">
+            <h2>Historial de Conversiones 📈</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <footer>
+        <p>Derechos reservados &copy; Mateo Deris 2024</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
